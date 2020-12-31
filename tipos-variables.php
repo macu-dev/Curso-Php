@@ -14,6 +14,7 @@
   $edad = 27.4;
   $edad = true; // sale 1 
   $edad = false; // no sale nada
+  $edad = "27";
   echo($edad);
 
 
