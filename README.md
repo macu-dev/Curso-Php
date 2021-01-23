@@ -4,8 +4,8 @@
 ![](https://cdn.iconscout.com/icon/free/png-256/php-27-226042.png)
 
 **Contenidos**
-
 [TOC]
+
 #Sintaxis Básica
 
 ##Introducción a PHP
@@ -22,10 +22,9 @@ A continuación se muestra un ejemplo de un archivo PHP simple. El script PHP us
 
     <!DOCTYPE html>
 	<html>
-		<head>
-			<meta charest="utf-8" />
-			<title>MI primera pagina con php </title>
-		</head>
+	  <head>
+	<title>MI primera pagina con php </title>
+	</head>
 		<body>
 			<?php
        		 echo "Hola Mundo";
@@ -43,17 +42,17 @@ En realidad, no es una función; es una **construcción del lenguaje** . Como ta
 Cada declaración de PHP debe terminar con un punto y coma `;`
 
 	<?php
-        echo "A";
-		echo "B";
-		echo "C";
+          echo "A";
+	  echo "B";
+	  echo "C";
     	?>
 ##Comentarios
 En el código PHP, un **comentario** es una línea que no se ejecuta como parte del programa. Puede utilizar los comentarios para comunicarse con los demás para que comprendan lo que está haciendo o como un recordatorio de lo que hizo. Un comentario de una** sola línea** comienza con `//`:
 
 	<?php
-     //echo "A";
-		echo "B";
-		echo "C";
+        //echo "A";
+	echo "B";
+	echo "C";
     	?>
 
 ##Comentarios de varias líneas
@@ -61,9 +60,9 @@ Los comentarios de varias líneas se utilizan para redactar comentarios que ocup
 Un comentario de varias líneas comienza con `/ *` y termina con`* /`.
 
 	<?php
-     	/*echo "A";
-		echo "B";
-		echo "C";*/
+     	 /*echo "A";
+	 echo "B";
+	 echo "C";*/
     	?>
 
 ##Variables
@@ -80,10 +79,10 @@ Reglas para variables de PHP:
 
 
 	<?php
-     	$nombre = 'Juan';
-		$edad = 25;
-		echo "$nombre;
-		//output: Juan
+     	 $nombre = 'Juan';
+	 $edad = 25;
+	 echo "$nombre;
+	//output: Juan
     	?>
 
 En el ejemplo anterior, observe que no tuvimos que decirle a PHP qué tipo de datos es la variable.
@@ -128,8 +127,8 @@ Una **cadena **es una secuencia de caracteres, como "¡Hola mundo!"
 Una cadena puede ser cualquier texto dentro de un conjunto de **comillas** simples o dobles .
 
 	<? php
- 		 $ string1 = "¡Hola mundo!"; // comillas dobles
- 		 $ string2 = '¡Hola mundo!'; // comillas simples
+ 	   $ string1 = "¡Hola mundo!"; // comillas dobles
+ 	   $ string2 = '¡Hola mundo!'; // comillas simples
 	?>
 Puede unir dos cadenas mediante el operador de concatenación de punto (.).
 
@@ -144,8 +143,8 @@ Un **entero** es un número entero (sin decimales) que debe cumplir con los sigu
 
 
 	<? php
-	  	$ int1 = 42; // número positivo
- 		 $ int2 = -42; // número negativo
+	   $ int1 = 42; // número positivo
+ 	   $ int2 = -42; // número negativo
 	?>
 
 Las variables pueden almacenar una variedad de tipos de datos.
@@ -154,25 +153,25 @@ Las variables pueden almacenar una variedad de tipos de datos.
 Un** flotador** , o número de punto flotante, es un número que incluye un punto decimal.
 
 	<? php
- 	 	$ x = 42.168;
+ 	   $ x = 42.168;
 	?>
 
 ##PHP booleano
 Un **booleano** representa dos estados posibles: **VERDADERO** o **FALSO**. simples o dobles
 
 	<? php
-  		$ x = verdadero; 
-		  $ y = falso;
+  	  $ x = verdadero; 
+	  $ y = falso;
 	?>
 
 La mayoría de los tipos de datos se pueden utilizar en combinación entre sí. En este ejemplo, la **cadena **y el** entero** se juntan para determinar la suma de dos números.
 
 	<? php
-  		$ str = "10"; 
-		  $ int = 20;
-		  $suma = $ str + $ int;
-		  echo $ str + $ int;
-		  echo $ suma //30
+  	  $ str = "10"; 
+	  $ int = 20;
+	  $suma = $ str + $ int;
+	  echo $ str + $ int;
+	  echo $ suma //30
 	?>
 
 PHP convierte automáticamente cada variable al tipo de datos correcto, de acuerdo con su valor. Es por eso que la variable **$ str** se trata como un número en la suma.
