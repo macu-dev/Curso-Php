@@ -6,6 +6,8 @@
   <title>Document</title>
 </head>
 <?php
+//PHP se considera un lenguaje interpretado, recibe el codigo, necesitas instalar em tu pc el interprete de php, (ngnx o apache), lenguaje multiplataforma (windows,mac,linux)
+//no es recomendable usar PHp para app de escritorio (pero si se puede), xampp es un entorno para desarrollo de aplicaciones no para produccion
 //php procesa instrucciones para que html cree las cosas que debe de crear, php nos permite ejecutar codigo html
 /*comentario multilinea*/
 #comentario con hash
