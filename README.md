@@ -18,9 +18,9 @@ El preprocesador de hipertexto ( PHP ) es un lenguaje de programación de códig
 ## Sintaxis PHP
 Un script PHP comienza con `<?php `y termina con `?>`
 
-  <?php
-    echo "Hola Mundo";
-  ?>
+    <?php
+      echo "Hola Mundo";
+    ?>
 
 A continuación se muestra un ejemplo de un archivo PHP simple. El script PHP usa una función incorporada llamada ` echo` para generar el texto **"Hola mundo!"** a una página web.
 
@@ -30,9 +30,7 @@ A continuación se muestra un ejemplo de un archivo PHP simple. El script PHP us
 	    <title>MI primera pagina con php </title>
 	  </head>
 		<body>
-			<?php
-       	echo "Hola Mundo";
-   		 ?>
+		  <?php echo "Hola Mundo";?>
 		</body>
 	</html>
 	
@@ -40,16 +38,16 @@ A continuación se muestra un ejemplo de un archivo PHP simple. El script PHP us
 PHP tiene una función de `echo` incorporada, que se utiliza para generar texto.
 En realidad, no es una función; es una **construcción del lenguaje** . Como tal, no requiere paréntesis. **Imprimamos un texto**.
 
-  <? php echo "me encanta php"; ?>
+    <? php echo "me encanta php"; ?>
 
 ## Declaraciones PHP
 Cada declaración de PHP debe terminar con un punto y coma `;`
 
 	<?php
-    echo "A";
+      echo "A";
 	  echo "B";
 	  echo "C";
-  ?>
+    ?>
 ## Comentarios
 En el código PHP, un **comentario** es una línea que no se ejecuta como parte del programa. Puede utilizar los comentarios para comunicarse con los demás para que comprendan lo que está haciendo o como un recordatorio de lo que hizo. Un comentario de una** sola línea** comienza con `//`:
 
@@ -57,17 +55,17 @@ En el código PHP, un **comentario** es una línea que no se ejecuta como parte 
     //echo "A";
 	  echo "B";
 	  echo "C";
-  ?>
+    ?>
 
 ## Comentarios de varias líneas
 Los comentarios de varias líneas se utilizan para redactar comentarios que ocupan más de una línea. Un comentario de una sola línea comienza con `//`:
 Un comentario de varias líneas comienza con `/ *` y termina con`* /`.
 
 	<?php
-  /*echo "A";
+    /*echo "A";
 	 echo "B";
 	 echo "C";*/
-  ?>
+    ?>
 
 
 # Variables
@@ -84,12 +82,12 @@ Reglas para variables de PHP:
 - Los nombres de las variables distinguen entre mayúsculas y minúsculas ($ name y $ NAME serían dos variables diferentes) **Por ejemplo:**
 
 
-	<?php
-    $nombre = 'Juan';
-	  $edad = 25;
-	  echo "$nombre;
-	  //output: Juan
-  ?>
+	  <?php
+        $nombre = 'Juan';
+	    $edad = 25;
+	    echo "$nombre;
+	   //output: Juan
+      ?>
 
 En el ejemplo anterior, observe que no tuvimos que decirle a PHP qué tipo de datos es la variable.
 PHP convierte automáticamente la variable al tipo de datos correcto, según su valor.
@@ -107,7 +105,7 @@ Parámetros:
 **no distingue entre mayúsculas y minúscula**s : especifica si el nombre de la constante no debe distinguir entre mayúsculas y minúsculas. El valor predeterminado es falso; El siguiente ejemplo crea una constante con un nombre que distingue entre mayúsculas y minúsculas :
 
 	<? php
-    define("NOMBRE", Macu);
+      define("NOMBRE", Macu);
 	  echo NOMBRE;
     //output: Macu
 	?>
@@ -116,9 +114,9 @@ Parámetros:
 El siguiente ejemplo crea una constante con un nombre que **no distingue entre mayúsculas y minúsculas** :
 
 	<? php
-    define("NOMBRE", Macu, true);
+      define("NOMBRE", Macu, true);
 	  echo nombre;
-    //output: Macu
+     //output: Macu
 	?>
 	
 
@@ -138,7 +136,7 @@ Una cadena puede ser cualquier texto dentro de un conjunto de **comillas** simpl
 	?>
 > Puede unir dos cadenas mediante el operador de concatenación de punto (.). Por ejemplo:` echo $ s1. $ s2`
 
-###Entero PHP
+### Entero PHP
 
 Un **entero** es un número entero (sin decimales) que debe cumplir con los siguientes criterios:
 - No puede contener comas ni espacios en blanco
@@ -146,10 +144,10 @@ Un **entero** es un número entero (sin decimales) que debe cumplir con los sigu
 - Puede ser positivo o negativo
 
 
-	<? php
-	  $ int1 = 42; // número positivo
- 	  $ int2 = -42; // número negativo
-	?>
+	  <? php
+	    $ int1 = 42; // número positivo
+ 	    $ int2 = -42; // número negativo
+	  ?>
 
 >Las variables pueden almacenar una variedad de tipos de datos.
 
@@ -164,7 +162,7 @@ Un** flotador** , o número de punto flotante, es un número que incluye un punt
 Un **booleano** representa dos estados posibles: **VERDADERO** o **FALSO**. simples o dobles
 
 	<? php
-  	$ x = verdadero; 
+  	  $ x = verdadero; 
 	  $ y = falso;
 	?>
 
